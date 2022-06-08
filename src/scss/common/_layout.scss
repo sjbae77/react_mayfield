@@ -1,0 +1,25 @@
+.content {
+  >.inner {
+    width: 1180px;
+    min-height: 800px;
+    margin: 100px auto;
+    position: relative;
+
+    h1 {
+      font-weight: normal;
+      font-size: $fontXXL;
+      color: #666;
+      margin-bottom: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet){
+  .content {
+    >.inner {
+      width: 100%;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+  }
+}
