@@ -1,7 +1,7 @@
 import React from "react";
 
 function Visual() {
-  return <div>Visual</div>;
+  return <section id="visual">Visual</section>;
 }
 
 export default Visual;

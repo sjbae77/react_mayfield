@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
 $tablet: 1179px;
 $mb: 539px;
 
@@ -28,3 +31,13 @@ $fontS: 0.8rem;
 @import 'sub/community';
 @import 'sub/location';
 @import 'sub/join';
+
+body {
+  background-color: #111;
+  color: #fff;
+}
+
+.inner {
+  width: 1180px;
+  margin: 0 auto;
+}

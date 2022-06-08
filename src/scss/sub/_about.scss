@@ -1,0 +1,188 @@
+.About {
+  padding-bottom: 100px;
+
+  article {
+    margin-top: 150px;
+
+    .title {
+      position: relative;
+      display: block;
+      margin-bottom: 50px;
+      font-size: $fontXXL;
+      color: #fff;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background-color: darkgreen;
+      }
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .banner {
+    background: url("../../../public/img/visual.png") no-repeat center/cover;
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    filter: grayscale(0.5);
+
+    .text-wrap {
+      h1 {
+        margin-bottom: 5px;
+        font-size: $fontXXXL;
+      }
+      h2 {
+        font-size: $fontXXL;
+        font-weight: 400;
+
+        strong {
+          color: darkgreen;
+        }
+      }
+    }
+  }
+  
+  .story {
+    width: 100%;
+
+    .inner {
+      display: flex;
+      justify-content: space-between;
+
+      .left {
+        width: 60%;
+        margin-right: 5%;
+
+        >p {
+          line-height: 2;
+          font-size: $fontL;
+          color: #ddd;
+        }
+
+        .num-wrap {
+          margin-top: 40px;
+          display: flex;
+          align-items: center;
+
+          span {
+            display: block;
+            margin-right: 20px;
+            line-height: 1;
+            font-size: 80px;
+            border-bottom: 5px solid #fff;
+          }
+        }
+      }
+      .right {
+        width: 35%;
+  
+        .pic {
+          position: relative;
+          width: 100%;
+          height: 400px;
+          filter: grayscale(0.5);
+  
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          .text-wrap {
+            width: 80%;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+
+            span {
+              display: block;
+              margin-bottom: 10px;
+              font-size: $fontL;
+              font-weight: 600;
+            }
+            p {
+              font-size: $fontS;
+              color: #ddd;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .rooms {
+    width: 100%;
+
+    .wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      .cont {
+        position: relative;
+        width: 33.33%;
+
+        .pic {
+          margin-bottom: 20px;
+          width: 100%;
+          height: 300px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        strong {
+          display: block;
+          margin-bottom: 10px;
+          font-size: $fontL;
+        }
+        p {
+          font-size: $fontS;
+          color: #ddd;
+        }
+        span {
+          position: absolute;
+          right: 0;
+          bottom: 20px;
+          display: block;
+          padding-right: 40px;
+
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 1px;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .vision {
+    p {
+      font-size: $fontL;
+      color: #ddd;
+      line-height: 1.6;
+    }
+  }
+}
