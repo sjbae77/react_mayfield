@@ -1,0 +1,19 @@
+{
+  "rooms": [
+    {
+      "name": "Room design1",
+      "desc": "Room",
+      "pic": "room1.jpg"
+    },
+    {
+      "name": "Room design2",
+      "desc": "Room",
+      "pic": "room2.jpg"
+    },
+    {
+      "name": "Romm design3",
+      "desc": "Room",
+      "pic": "room3.jpg"
+    }
+  ]
+}
