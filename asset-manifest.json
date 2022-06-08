@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react_mayfield/static/css/main.a19a8cd6.css",
+    "main.js": "/react_mayfield/static/js/main.cd5e4446.js",
+    "static/media/visual.png": "/react_mayfield/static/media/visual.d6fca2c7cc4ca503d761.png",
+    "index.html": "/react_mayfield/index.html",
+    "main.a19a8cd6.css.map": "/react_mayfield/static/css/main.a19a8cd6.css.map",
+    "main.cd5e4446.js.map": "/react_mayfield/static/js/main.cd5e4446.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a19a8cd6.css",
+    "static/js/main.cd5e4446.js"
+  ]
+}
