@@ -1,3 +1,22 @@
 * { margin:0; padding: 0; box-sizing: border-box; font-family: 'Poppins','Nanum Gothic'; }
 ul,li,ol { list-style: none; }
 a { text-decoration: none; }
+fieldset { border: none; }
+table { border-collapse: collapse; }
+textarea { resize: none; border-radius: 5px; font-size: $fontM; }
+input, select { 
+  border: 1px solid #ccc; background-color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: $fontM;
+}
+input:focus { outline: none; }
+
+.hidden {
+  position: absolute;
+  top: -99999px;
+}
+
+.w100 {
+  width: 100% !important;
+}
