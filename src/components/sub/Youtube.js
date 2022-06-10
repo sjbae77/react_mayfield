@@ -35,6 +35,45 @@ function Youtube() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
           corrupti optio rerum. Sapiente ut id modi harum laudantium
         </p>
+        <div className="mainVids-wrap">
+          <div className="cont">
+            <p className="info">
+              Mayfield Hotel
+              <br />
+              <br />
+              2002
+              <br />
+              Seoul, Korea
+              <br />
+              <br />
+              mayres@mayfield.co.kr
+              <br />
+              02.2660.9000
+            </p>
+            <p className="desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+              cupiditate, aliquam quidem corporis accusantium facere dolorum
+            </p>
+
+            <div className="pic">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/JZxOBtrnLxw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <span>
+                MAIN
+                <br />
+                VIDEO
+              </span>
+            </div>
+          </div>
+          <div className="line"></div>
+        </div>
         <div className="wrap">
           {Vids.map((vid, idx) => {
             const tit = vid.snippet.title;

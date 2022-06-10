@@ -7,6 +7,75 @@
       font-size: $fontM;
       color: #ddd;
     }
+
+    .mainVids-wrap {
+      position: relative;
+      margin: 200px 0 150px;
+      display: flex;
+      justify-content: flex-end;
+
+      .cont {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        width: 40%;
+        height: 400px;
+        background-color: #fff;
+        color: #222;
+        padding: 40px;
+
+        .info {
+          position: absolute;
+          top: 50px;
+          left: 40%;
+          line-height: 1.4;
+          font-family: 'Dosis';
+          font-size: $fontL;
+          font-weight: 600;
+        }
+
+        .desc {
+          font-size: $fontM;
+          color: #777;
+        }
+
+        .pic {
+          position: absolute;
+          top: -100px;
+          left: -98%;
+          width: 130%;
+          height: 340px;
+
+          iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+  
+          >span {
+            position: absolute;
+            top: -22px;
+            left: -60px;
+            font-size: $fontXXL;
+            font-weight: 600;
+            line-height: 1.4;
+            letter-spacing: 5px;
+            color: #fff;
+          }
+  
+        }
+      }
+
+      .line {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        width: 35%;
+        height: 3px;
+        background-color: #fff;
+      }
+
+    }
     .wrap {
       margin-top: 70px;
       display: flex;
