@@ -12,7 +12,8 @@ function Join() {
     email: "",
     comments: "",
     area: "",
-    genter: null,
+    gender: null,
+    agree: null,
   };
 
   const [Val, setVal] = useState(initVal);
@@ -62,6 +63,11 @@ function Join() {
       errs.area = "지역을 선택하세요";
     }
 
+    if (!Val.agree) {
+      console.log("체크안함");
+      errs.agree = "이용에 동의해주세요";
+    }
+
     return errs;
   };
 
@@ -98,6 +104,12 @@ function Join() {
     setVal({ ...Val, [name]: isSelected });
   };
 
+  const handleCheck = (e) => {
+    const { name } = e.target;
+    const isCheck = e.target.checked;
+    setVal({ ...Val, [name]: isCheck });
+  };
+
   useEffect(() => {
     const len = Object.keys(Err).length;
     if (len === 0 && Submit) {
@@ -117,10 +129,10 @@ function Join() {
         reiciendis maxime.
       </p>
 
-      <span>회원정보</span>
       <form onSubmit={handleSubmit}>
         <fieldset>
           <legend className="hidden">회원가입 폼 양식</legend>
+          <span className="title">회원정보</span>
           <table>
             <caption className="hidden">회원가입 정보입력</caption>
             <tbody>
@@ -253,20 +265,58 @@ function Join() {
                   <span className="err">{Err.comments}</span>
                 </td>
               </tr>
-
-              {/* btnSet */}
-              <tr className="w100">
-                <th colSpan="2">
-                  <input type="reset" value="CANCEL" onClick={handleReset} />
-                  <input
-                    type="submit"
-                    value="SUBMIT"
-                    onClick={() => setSubmit(true)}
-                  />
-                </th>
-              </tr>
             </tbody>
           </table>
+          <div className="terms">
+            <span className="title">개인정보 수집 및 이용동의(필수)</span>
+            <div className="text">
+              <p>
+                <b>
+                  메이필드서울은 아래의 목적으로 개인 정보를 수집 및 이용하며,
+                  회원의 개인정보를 안전하게 취급하는데 최선을 다합니다.
+                </b>
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                eaque necessitatibus explicabo in labore culpa nulla modi
+                accusamus nesciunt saepe perspiciatis itaque, eveniet sunt unde
+                ullam ducimus voluptates reiciendis inventore pariatur quidem!
+                Commodi delectus, cupiditate inventore unde impedit quis ab
+                nulla non? Illum, quasi sed iste temporibus vero voluptate
+                accusantium magni aliquid velit delectus! Quidem modi ipsa
+                adipisci facere omnis, quam aliquam? Qui facere natus, ex sint
+                ipsa, harum vitae dicta aspernatur nesciunt sapiente magni odio,
+                voluptate ab. Dolorum nihil voluptatum voluptatibus voluptas
+                maxime enim ab, quo debitis quod unde est veniam natus nesciunt
+                ex odio labore rem pariatur ducimus! nulla non? Illum, quasi sed
+                iste temporibus vero voluptate accusantium magni aliquid velit
+                delectus! Quidem modi ipsa adipisci facere omnis, quam aliquam?
+                Qui facere natus, ex sint ipsa, harum vitae dicta aspernatur
+                nesciunt sapiente magni odio, voluptate ab. Dolorum nihil
+                voluptatum voluptatibus voluptas maxime enim ab, quo debitis
+                quod unde est veniam natus nesciunt ex odio labore rem pariatur
+                ducimus!
+              </p>
+            </div>
+            <div className="check-wrap">
+              <input
+                type="checkbox"
+                name="agree"
+                id="agree"
+                onChange={handleCheck}
+              />
+              <label htmlFor="agree">개인정보 수집 및 이용에 동의합니다.</label>
+              <span className="err">{Err.agree}</span>
+            </div>
+          </div>
+
+          <div className="btnSet">
+            <input type="reset" value="CANCEL" onClick={handleReset} />
+            <input
+              type="submit"
+              value="SUBMIT"
+              onClick={() => setSubmit(true)}
+            />
+          </div>
         </fieldset>
       </form>
     </Layout>
