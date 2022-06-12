@@ -98,9 +98,18 @@
         text-align: center;
 
         input {
-          padding: 12px 50px;
-
+          width: 180px;
+          height: 50px;
           margin-right: 20px;
+          font-size: $fontL;
+          font-weight: 600;
+          color: #eee;
+          background-color: #4e6c4e;
+          border: none;
+
+          &:hover {
+            background-color: darken($color: #4e6c4e, $amount: 9);
+          }
         }
       }
 

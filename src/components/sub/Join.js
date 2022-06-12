@@ -310,10 +310,10 @@ function Join() {
           </div>
 
           <div className="btnSet">
-            <input type="reset" value="CANCEL" onClick={handleReset} />
+            <input type="reset" value="입력내용 초기화" onClick={handleReset} />
             <input
               type="submit"
-              value="SUBMIT"
+              value="가입하기"
               onClick={() => setSubmit(true)}
             />
           </div>

@@ -1,0 +1,100 @@
+.Community {
+  .inputBox {
+    width: 100%;
+    text-align: center;
+    margin: 100px 0;
+
+    input,textarea {
+      width: 50%;
+      margin-bottom: 20px;
+      padding: 8px 10px;
+    }
+
+    .btnSet {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: 50%;
+      margin: 0 auto;
+
+      button {
+        width: 50%;
+        height: 45px;
+        background-color: #4e6c4e;
+        color: #eee;
+        font-size: $fontL;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+          background-color: darken($color: #4e6c4e, $amount: 9);
+        }
+      }
+    }
+  }
+
+  .showBox {
+    width: 100%;
+    border-top: 2px solid #ddd;
+
+    article {
+      width: 100%;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #3e3e3e;
+
+      .date {
+        position: relative;
+        padding-left: 70px;
+        width: 20%;
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 36%;
+          left: 0;
+          width: 50px;
+          height: 1px;
+          background-color: #fff;
+        }
+
+        em {
+          display: block;
+          font-style: normal;
+          font-size: $fontS;
+        }
+        span {
+          font-size: $fontXXL;
+          font-weight: 600;
+        }
+      }
+      .txt {
+        width: 60%;
+
+        h2 {
+          font-size: $fontXL;
+        }
+        p {
+          font-size: $fontL;
+          color: #aaa;
+        }
+      }
+      .btnSet {
+        width: 20%;
+        text-align: end;
+
+        button {
+          margin-right: 10px;
+          padding: 6px 12px;
+          font-size: $fontS;
+          
+          svg {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
