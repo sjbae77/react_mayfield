@@ -151,8 +151,8 @@ function Community() {
                   </div>
 
                   <div className="btnSet">
-                    <button onClick={() => disableUpdate(idx)}>CANCEL</button>
-                    <button onClick={() => updatePost(idx)}>SAVE</button>
+                    <button onClick={() => disableUpdate(idx)}>취소</button>
+                    <button onClick={() => updatePost(idx)}>저장</button>
                   </div>
                 </>
               ) : (
@@ -169,12 +169,12 @@ function Community() {
 
                   <div className="btnSet">
                     <button onClick={() => enableUpdate(idx)}>
-                      <FontAwesomeIcon icon={faPenToSquare} />
                       수정
+                      <FontAwesomeIcon icon={faPenToSquare} />
                     </button>
                     <button onClick={() => deletePost(idx)}>
-                      <FontAwesomeIcon icon={faX} />
                       삭제
+                      <FontAwesomeIcon icon={faX} />
                     </button>
                   </div>
                 </>
