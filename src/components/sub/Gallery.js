@@ -1,5 +1,7 @@
 import Layout from "../common/Layout";
 import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlassPlus } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect, useRef } from "react";
 import Masonry from "react-masonry-component";
 import Popup from "../common/Popup";
@@ -77,20 +79,18 @@ function Gallery() {
                 return (
                   <article key={idx}>
                     <div className="inner">
-                      <div
-                        className="pic"
-                        onClick={() => {
-                          pop.current.open();
-                          setIndex(idx);
-                        }}
-                      >
+                      <div className="pic">
                         <img
                           src={`https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_m.jpg`}
                           alt={item.title}
                         />
-                      </div>
-                      <div className="info">
-                        <h2>{item.title}</h2>
+                        <FontAwesomeIcon
+                          icon={faMagnifyingGlassPlus}
+                          onClick={() => {
+                            pop.current.open();
+                            setIndex(idx);
+                          }}
+                        />
                         <div className="profile">
                           <img
                             src={`http://farm${item.farm}.staticflickr.com/${item.server}/buddyicons/${item.owner}.jpg`}
@@ -119,6 +119,8 @@ function Gallery() {
                           </span>
                         </div>
                       </div>
+
+                      <h2>{item.title}</h2>
                     </div>
                   </article>
                 );

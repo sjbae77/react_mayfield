@@ -1,5 +1,7 @@
 import { useEffect, useState, forwardRef, useImperativeHandle } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX } from "@fortawesome/free-solid-svg-icons";
 
 /*
 	단계1 - 기존의 컴포넌트 함수를 대입형(화살표) 함수로 변경
@@ -54,7 +56,7 @@ const Popup = forwardRef(({ children }, ref) => {
             >
               {children}
               <span className="close" onClick={() => setOpen(false)}>
-                close
+                <FontAwesomeIcon icon={faX} />
               </span>
             </motion.div>
           </motion.aside>
