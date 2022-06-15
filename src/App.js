@@ -16,7 +16,16 @@ import Youtube from "./components/sub/Youtube";
 import Location from "./components/sub/Location";
 import Join from "./components/sub/Join";
 
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch({ type: "YOUTUBE_START" });
+  }, []);
+
   return (
     <>
       <Switch>
