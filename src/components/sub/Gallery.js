@@ -30,6 +30,7 @@ function Gallery() {
     }
 
     await axios.get(url).then((json) => {
+      console.log(json.data);
       //만약 검색 결과가 없다면 경고창 띄우고 종료
       if (json.data.photos.photo.length === 0)
         return alert("해당검색어의 결과이미지 없습니다.");
@@ -130,6 +131,18 @@ function Gallery() {
           <div className="title-wrap">
             <h1>HOTEL</h1>
           </div>
+          {/* <button
+            onClick={() => {
+              setLoading(true);
+              frame.current.classList.remove("on");
+              getFlickr({
+                type: "interest",
+                count: 50,
+              });
+            }}
+          >
+            Interest button
+          </button> */}
         </div>
       </Layout>
 

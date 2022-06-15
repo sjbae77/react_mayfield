@@ -2,13 +2,13 @@
   width: 100%;
   height: 100vh;
   background-color: rgba($color: #000000, $alpha: 0.9);
-  padding: 10vw;
+  padding: 5vw;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
 
-  .cont {
+  .con {
     width: 100%;
     height: 100%;
     position: relative;
@@ -25,34 +25,14 @@
       object-fit: contain;
     }
 
-    .btnClose {
+    .close {
       position: absolute;
-      top: -70px;
+      top: -40px;
       right: 0;
-      font-size: $fontXL;
-      font-weight: 200;
-      color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 6px 15px;
+      font-size: $fontM;
+      color: orange;
+      font-family: 'arial';
       cursor: pointer;
     }
-  }
-}
-
-@media screen and (max-width:$tablet) {
-  .pop {
-    padding: 20vw 15vw;
-    .cont {
-      .btnClose {
-        font-size: $fontL;
-      }
-    }
-  }
-}
-
-@media screen and (max-width:$mb) {
-  .pop {
-    padding: 50vw 15vw;
   }
 }
