@@ -51,6 +51,10 @@ function Community() {
     resetPost();
   };
 
+  const onCreate = () => {
+    if (window.confirm("게시글을 등록하시겠습니까?")) createPost();
+  };
+
   //글 삭제 함수
   const deletePost = (index) => {
     // console.log(index);
@@ -124,8 +128,12 @@ function Community() {
         <br />
 
         <div className="btnSet">
-          <button onClick={resetPost}>초기화</button>
-          <button onClick={createPost}>등록하기</button>
+          <button onClick={resetPost} className="shape_paral">
+            <span>초기화</span>
+          </button>
+          <button onClick={() => onCreate()} className="shape_paral">
+            <span>등록하기</span>
+          </button>
         </div>
       </div>
 

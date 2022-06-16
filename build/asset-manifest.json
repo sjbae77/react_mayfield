@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react_mayfield/static/css/main.354ed70c.css",
-    "main.js": "/react_mayfield/static/js/main.1afbbbcb.js",
+    "main.css": "/react_mayfield/static/css/main.dff7828a.css",
+    "main.js": "/react_mayfield/static/js/main.2522c459.js",
     "static/media/visual.png": "/react_mayfield/static/media/visual.d6fca2c7cc4ca503d761.png",
     "index.html": "/react_mayfield/index.html",
-    "main.354ed70c.css.map": "/react_mayfield/static/css/main.354ed70c.css.map",
-    "main.1afbbbcb.js.map": "/react_mayfield/static/js/main.1afbbbcb.js.map"
+    "main.dff7828a.css.map": "/react_mayfield/static/css/main.dff7828a.css.map",
+    "main.2522c459.js.map": "/react_mayfield/static/js/main.2522c459.js.map"
   },
   "entrypoints": [
-    "static/css/main.354ed70c.css",
-    "static/js/main.1afbbbcb.js"
+    "static/css/main.dff7828a.css",
+    "static/js/main.2522c459.js"
   ]
 }
