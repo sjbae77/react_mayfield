@@ -66,7 +66,6 @@
           .pic {
             position: relative;
             width: 100%;
-            cursor: pointer;
   
             &::after {
               display: none;
@@ -91,7 +90,12 @@
               color: #ccc;
               opacity: 0;
               transform: translate(50px, -50%);
-              transition: 0.5s 0.3s;
+              transition: transform 0.5s 0.3s, opacity 0.5s 0.3s;
+              cursor:pointer;
+
+              &:hover {
+                color: darkgreen;
+              }
             }
             .profile {
               z-index: 2;
@@ -112,6 +116,11 @@
     
               span {
                 color: #fff;
+                cursor: pointer;
+
+                &:hover {
+                  color: darkgreen;
+                }
               }
             }
   

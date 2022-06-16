@@ -34,7 +34,6 @@ function App() {
           <Visual />
           <Service />
           <News />
-          <Footer />
         </Route>
         <Route path="/" render={() => <Header type={"sub"} />} />
       </Switch>
@@ -45,6 +44,8 @@ function App() {
       <Route path="/youtube" component={Youtube} />
       <Route path="/location" component={Location} />
       <Route path="/join" component={Join} />
+
+      <Footer />
     </>
   );
 }

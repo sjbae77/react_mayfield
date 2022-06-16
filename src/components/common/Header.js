@@ -14,7 +14,7 @@ function Header({ type }) {
         <ul id="gnb">
           <li>
             <NavLink activeStyle={style} to="/about">
-              About
+              ABOUT
             </NavLink>
           </li>
           <li>

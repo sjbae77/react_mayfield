@@ -88,12 +88,11 @@ function Gallery() {
       count: 20,
       user: "195772706@N08",
     });
-  }, []);
 
-  useEffect(() => {
     getFlickr2({
-      type: "interest",
-      count: 20,
+      type: "search",
+      count: "20",
+      tags: "hotel",
     });
   }, []);
 
