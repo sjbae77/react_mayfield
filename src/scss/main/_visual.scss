@@ -1,10 +1,112 @@
 #visual {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 100px);
   background-color: #444;
   color: #fff;
-  font-size: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .inner {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: -10%;
+      content: '';
+      display: block;
+      width: 110%;
+      height: 300px;
+      background-color: rgba($color: #000000, $alpha: 0.6);
+    }
+
+    .mainBox {
+      position: relative;
+      width: 80%;
+      height: 90%;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      .title-wrap {
+        position: absolute;
+        top: 70px;
+        left: -200px;
+  
+        h1 {
+          position: relative;
+          font-size: $fontXXXL;
+  
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 70%;
+            right: -60%;
+            width: 100%;
+            height: 2px;
+            background-color: darkgreen;
+          }
+        }
+  
+        .shape_paral {
+          margin-top: 50px;
+          margin-left: 30px;
+          display: block;
+          width: 230px;
+          height: 50px;
+        }
+      }
+    }
+
+    .pic {
+      position: absolute;
+      bottom: 0;
+      right: 350px;
+      width: 300px;
+      height: 370px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .textBox {
+      position: absolute;
+      bottom: 0;
+      right: 150px;
+      padding: 25px;
+      background-color: #222;
+      width: 300px;
+      height: 300px;
+
+      em {
+        display: block;
+        margin-bottom: 20px;
+        font-size: $fontS;
+        font-weight: 600;
+        color: darkgreen;
+      }
+      span {
+        font-size: $fontXL;
+        font-weight: 600;
+        line-height: 1.4;
+      }
+      p {
+        margin-top: 30px;
+        font-size: $fontS;
+        color: #ccc;
+        line-height: 1.6;
+      }
+    }
+  }
 }

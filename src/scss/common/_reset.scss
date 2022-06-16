@@ -10,9 +10,8 @@ input, select {
   font-size: $fontM;
 }
 input:focus { outline: none; }
-button {
-  border: none;
-}
+button {border: none;}
+em { font-style: normal; }
 
 .hidden {
   position: absolute;
