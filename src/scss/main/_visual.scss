@@ -1,4 +1,5 @@
 #visual {
+  position: relative;
   width: 100%;
   height: calc(100vh - 100px);
   background-color: #444;
@@ -36,6 +37,7 @@
       }
   
       .title-wrap {
+        z-index: 2;
         position: absolute;
         top: 70px;
         left: -200px;
@@ -81,9 +83,10 @@
     }
 
     .textBox {
+      z-index: 2;
       position: absolute;
       bottom: 0;
-      right: 150px;
+      right: 140px;
       padding: 25px;
       background-color: #222;
       width: 300px;
@@ -108,5 +111,28 @@
         line-height: 1.6;
       }
     }
+  }
+
+  .cursor {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    position: fixed;
+    border-radius: 50%;
+    top: -9999px;
+    left: 0;
+    z-index: 5;
+    text-align: center;
+    mix-blend-mode: difference;
+    // transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $fontM;
+    font-weight: 600;
+    color: #000;
   }
 }
