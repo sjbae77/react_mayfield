@@ -46,8 +46,8 @@ function Visual() {
               <img src={`${path}/img/main_visual3.jpg`} alt="visual image" />
             </SwiperSlide>
           </Swiper>
-          {/* <img src={`${path}/img/main_visual1.jpg`} alt="visual image" /> */}
           <div className="title-wrap">
+            <em>SINCE 2002</em>
             <h1>
               We are making
               <br />
@@ -59,9 +59,6 @@ function Visual() {
           </div>
         </div>
 
-        {/* <div className="pic">
-          <img src={`${path}/img/main_visual2.jpg`} alt="visual image" />
-        </div> */}
         <div className="textBox">
           <em>LAST VIDEO</em>
           <span>Lorem, ipsum dolor sit amet.</span>

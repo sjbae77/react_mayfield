@@ -5,7 +5,7 @@
     margin: 100px 0;
 
     input,textarea {
-      width: 50%;
+      width: 100%;
       margin-bottom: 20px;
       padding: 8px 10px;
     }
@@ -13,12 +13,12 @@
     .btnSet {
       display: flex;
       align-items: center;
+      justify-content: flex-end;
       gap: 20px;
-      width: 50%;
-      margin: 0 auto;
+      width: 100%;
 
       button {
-        width: 50%;
+        width: 200px;
         height: 45px;
         background-color: #4e6c4e;
         color: #eee;

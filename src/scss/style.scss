@@ -39,6 +39,15 @@ body {
   color: #fff;
 }
 
+.hidden {
+  position: absolute;
+  top: -99999px;
+}
+
+.w100 {
+  width: 100% !important;
+}
+
 .inner {
   width: 1180px;
   margin: 0 auto;

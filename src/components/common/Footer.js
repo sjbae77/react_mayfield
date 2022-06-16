@@ -15,7 +15,7 @@ function Footer() {
             <a href="#">buy now</a>
           </span>
 
-          <span className="shape_paral icon">
+          {/* <span className="shape_paral icon">
             <a href="#">
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
@@ -24,7 +24,7 @@ function Footer() {
             <a href="#">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-          </span>
+          </span> */}
 
           <ul className="ft_gnb">
             <li>

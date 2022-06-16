@@ -1,8 +1,5 @@
 import Layout from "../common/Layout";
 import { useRef, useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
-import { faX } from "@fortawesome/free-solid-svg-icons";
 
 function Community() {
   const input = useRef(null);
@@ -58,6 +55,10 @@ function Community() {
   const deletePost = (index) => {
     // console.log(index);
     setPosts(Posts.filter((_, idx) => index !== idx));
+  };
+
+  const onRemove = (idx) => {
+    if (window.confirm("정말 삭제하시겠습니까?")) deletePost(idx);
   };
 
   //실제 글 수정 함수
@@ -168,14 +169,8 @@ function Community() {
                   </div>
 
                   <div className="btnSet">
-                    <button onClick={() => enableUpdate(idx)}>
-                      수정
-                      <FontAwesomeIcon icon={faPenToSquare} />
-                    </button>
-                    <button onClick={() => deletePost(idx)}>
-                      삭제
-                      <FontAwesomeIcon icon={faX} />
-                    </button>
+                    <button onClick={() => enableUpdate(idx)}>수정</button>
+                    <button onClick={() => onRemove(idx)}>삭제</button>
                   </div>
                 </>
               )}

@@ -12,12 +12,3 @@ input, select {
 input:focus { outline: none; }
 button {border: none;}
 em { font-style: normal; }
-
-.hidden {
-  position: absolute;
-  top: -99999px;
-}
-
-.w100 {
-  width: 100% !important;
-}

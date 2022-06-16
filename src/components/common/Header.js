@@ -18,11 +18,6 @@ function Header({ type }) {
             </NavLink>
           </li>
           <li>
-            <NavLink activeStyle={style} to="/community">
-              COMMUNITY
-            </NavLink>
-          </li>
-          <li>
             <NavLink activeStyle={style} to="/gallery">
               GALLERY
             </NavLink>
@@ -30,6 +25,11 @@ function Header({ type }) {
           <li>
             <NavLink activeStyle={style} to="/youtube">
               YOUTUBE
+            </NavLink>
+          </li>
+          <li>
+            <NavLink activeStyle={style} to="/community">
+              COMMUNITY
             </NavLink>
           </li>
           <li>
