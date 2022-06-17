@@ -1,11 +1,11 @@
 import Layout from "../common/Layout";
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import Popup from "../common/Popup";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 function Youtube() {
   const pop = useRef(null);
-  const Vids = useSelector((store) => store.youtubeReducer.youtube);
+  const Vids = useSelector((store) => store.youtube.data);
   const [Index, setIndex] = useState(0);
 
   const handlePopup = (idx) => {

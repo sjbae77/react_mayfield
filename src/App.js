@@ -18,12 +18,13 @@ import Join from "./components/sub/Join";
 
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
+import { fetchYoutube } from "./redux/youtubeSlice";
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch({ type: "YOUTUBE_START" });
+    dispatch(fetchYoutube());
   }, []);
 
   return (
