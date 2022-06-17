@@ -34,7 +34,6 @@ function Gallery() {
     }
 
     await axios.get(url).then((json) => {
-      console.log(json.data);
       //만약 검색 결과가 없다면 경고창 띄우고 종료
       if (json.data.photos.photo.length === 0)
         return alert("해당검색어의 결과이미지 없습니다.");
@@ -67,7 +66,6 @@ function Gallery() {
     }
 
     await axios.get(url).then((json) => {
-      console.log(json.data);
       //만약 검색 결과가 없다면 경고창 띄우고 종료
       if (json.data.photos.photo.length === 0)
         return alert("해당검색어의 결과이미지 없습니다.");
@@ -91,8 +89,8 @@ function Gallery() {
 
     getFlickr2({
       type: "search",
-      count: "20",
-      tags: "hotel",
+      count: "10",
+      tags: "animal",
     });
   }, []);
 
@@ -209,7 +207,7 @@ function Gallery() {
                             setLoading(true);
                             frame2.current.classList.remove("on");
 
-                            getFlickr({
+                            getFlickr2({
                               type: "user",
                               count: 50,
                               user: e.currentTarget.innerText,

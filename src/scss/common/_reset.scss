@@ -3,7 +3,7 @@ ul,li,ol { list-style: none; }
 a { text-decoration: none; }
 fieldset { border: none; }
 table { border-collapse: collapse; }
-textarea { resize: none; font-size: $fontM; }
+textarea { resize: none; font-size: $fontM; padding: 8px; }
 input, select { 
   border: 1px solid #ccc; background-color: #fff;
   padding: 8px;
