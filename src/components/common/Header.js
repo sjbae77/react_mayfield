@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Header({ type }) {
+  const style = { color: "darkgreen", fontWeight: "600" };
   return (
     <header className={type}>
       <div className="inner">
@@ -12,22 +13,34 @@ function Header({ type }) {
 
         <ul id="gnb">
           <li>
-            <NavLink to="/about">ABOUT</NavLink>
+            <NavLink activeStyle={style} to="/about">
+              ABOUT
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/gallery">GALLERY</NavLink>
+            <NavLink activeStyle={style} to="/gallery">
+              GALLERY
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/youtube">YOUTUBE</NavLink>
+            <NavLink activeStyle={style} to="/youtube">
+              YOUTUBE
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/community">COMMUNITY</NavLink>
+            <NavLink activeStyle={style} to="/community">
+              COMMUNITY
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/location">LOCATION</NavLink>
+            <NavLink activeStyle={style} to="/location">
+              LOCATION
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/join">JOIN</NavLink>
+            <NavLink activeStyle={style} to="/join">
+              JOIN
+            </NavLink>
           </li>
         </ul>
 
