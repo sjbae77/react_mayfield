@@ -28,7 +28,7 @@ function Visual() {
 
   return (
     <section id="visual">
-      <div className="inner">
+      <div className="visual_inner">
         <div className="mainBox">
           <Swiper
             slidesPerView={1}
@@ -46,6 +46,8 @@ function Visual() {
               <img src={`${path}/img/main_visual3.jpg`} alt="visual image" />
             </SwiperSlide>
           </Swiper>
+        </div>
+        <div className="inner">
           <div className="title-wrap">
             <em>SINCE 2002</em>
             <h1>
@@ -57,15 +59,15 @@ function Visual() {
               <a href="#">read more about us</a>
             </span>
           </div>
-        </div>
 
-        <div className="textBox">
-          <em>LAST VIDEO</em>
-          <span>Lorem, ipsum dolor sit amet.</span>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            adipisci, sint laboriosam officia
-          </p>
+          <div className="textBox">
+            <em>LAST VIDEO</em>
+            <span>Lorem, ipsum dolor sit amet.</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores adipisci, sint laboriosam officia
+            </p>
+          </div>
         </div>
       </div>
 

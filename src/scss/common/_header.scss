@@ -2,19 +2,16 @@ header {
   width: 100%;
   background-color: #111;
 
-
   .inner {
     position: relative;
     width: 1180px;
     height: 100px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     h1 {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-
       a {
         font-family: 'Dosis';
         font-weight: 200;
@@ -24,10 +21,6 @@ header {
     }
 
     #gnb {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
       display: flex;
       gap: 10px;
 

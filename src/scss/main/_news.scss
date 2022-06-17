@@ -3,8 +3,37 @@
   height: 100vh;
   background-color: #444;
   color: #fff;
-  font-size: 10vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  .inner {
+    position: relative;
+    height: 100%;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 80%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .title-wrap {
+      position: absolute;
+      top: 30px;
+      left: 0;
+      em {
+        display: block;
+        margin-bottom: 10px;
+        font-size: $fontS;
+        letter-spacing: 5px;
+        color: #ddd;
+      }
+  
+      h1 {
+        position: relative;
+        font-size: $fontXXXL;
+      }
+    }
+  }
 }
