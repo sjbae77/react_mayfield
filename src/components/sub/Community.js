@@ -128,10 +128,10 @@ function Community() {
         <br />
 
         <div className="btnSet">
-          <button onClick={resetPost} className="shape_paral">
+          <button onClick={resetPost}>
             <span>초기화</span>
           </button>
-          <button onClick={() => onCreate()} className="shape_paral">
+          <button onClick={() => onCreate()}>
             <span>등록하기</span>
           </button>
         </div>
