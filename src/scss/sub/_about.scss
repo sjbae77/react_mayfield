@@ -62,6 +62,7 @@
 
     .inner {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
 
       .left {
@@ -163,12 +164,12 @@
 
     .wrap {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      gap: 20px;
 
       .cont {
         position: relative;
-        width: 33.33%;
+        width: 32%;
 
         .pic {
           margin-bottom: 20px;
@@ -222,4 +223,42 @@
       line-height: 1.6;
     }
   }
+}
+
+@media screen and (max-width: $tablet){
+  .About {
+    article {
+      margin-top: 100px;
+    }
+
+    .story .inner {
+      .left, .right {
+        width: 100%;
+      }
+      .left {
+        margin-bottom: 50px;
+      }
+    } 
+
+    .rooms .wrap .cont {
+      width: 100%;
+      margin-bottom: 20px;
+
+      .pic {
+        height: 250px;
+      }
+    }
+  } 
+}
+
+@media screen and (max-width: $mb){
+  .About .banner .text-wrap {
+    h1 {
+      font-size: $fontXXL;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: $fontXL;
+    }
+  } 
 }

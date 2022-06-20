@@ -5,6 +5,7 @@ footer {
   .inner {
     padding: 100px;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
 
@@ -41,6 +42,7 @@ footer {
       ul {
         margin-top: 30px;
         display: flex;
+        flex-wrap: wrap;
         gap: 22px;
 
         li a {
@@ -54,5 +56,34 @@ footer {
 
   &.main {
     background-color: #444;
+  }
+}
+
+@media screen and (max-width: $tablet){
+  footer .inner {
+    padding: 50px;
+    flex-wrap: wrap;
+
+    .left, .right {
+      width: 100%;
+      text-align: left;
+    }
+    .right {
+      margin-top: 50px;
+
+      ul {
+        gap: 5px 13px;
+
+        li a {
+          font-size: $fontM;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: $mb) {
+  footer .inner .right .shape_paral:nth-child(2) {
+    margin-left: 0;
   }
 }
