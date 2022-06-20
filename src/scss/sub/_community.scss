@@ -42,6 +42,7 @@
       width: 100%;
       padding: 25px 0;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       border-bottom: 1px solid #3e3e3e;
 
@@ -114,4 +115,54 @@
       }
     }
   }
+}
+
+@media screen and (max-width: $tablet) {
+  .Community {
+    .inputBox {
+      input, textarea {
+        width: 100%;
+      }
+      .btnSet {
+        width: 100%;
+      }
+    }
+
+    .showBox {
+      article {
+        position: relative;
+
+        .date {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .txt {
+          width: 100%;
+        }
+        .btnSet {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: auto;
+
+          span {
+            font-size: $fontM;
+          }
+        }
+
+        .editTxt {
+          width: 75%;
+        }
+      }
+    }
+  } 
+}
+
+@media screen and (max-width: $mb) {
+  .Community .showBox article {
+    .btnSet {
+      flex-direction: column;
+      gap: 8px;
+    }
+  } 
 }

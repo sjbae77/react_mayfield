@@ -259,6 +259,7 @@ function Join() {
                     id="comments"
                     cols="30"
                     rows="10"
+                    placeholder="코멘트를 입력해주세요."
                     value={Val.comments}
                     onChange={handleChange}
                   ></textarea>

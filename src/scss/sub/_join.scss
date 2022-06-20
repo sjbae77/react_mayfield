@@ -125,3 +125,27 @@
   }
 }
 
+@media screen and (max-width:$tablet) {
+  .Join .inner form table tbody tr td {
+    input[type=text],input[type=password], select {
+      width: 95%;
+    }
+  }
+}
+
+@media screen and (max-width:$mb) {
+  .Join .inner {
+    > p {
+      width: 100%;
+    }
+
+    form {
+      table tbody tr {
+        width: 100%;
+      }
+      .btnSet input {
+        margin-right: 0;
+      }
+    } 
+  } 
+}
