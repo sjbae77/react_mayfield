@@ -1,6 +1,7 @@
 .Gallery {
   >.inner {
     display: flex;
+    flex-wrap: wrap;
 
     .loading {
       position: absolute;
@@ -164,4 +165,39 @@
     }
   }
   
+}
+
+@media screen and (max-width: $tablet) {
+  .Gallery > .inner {
+    .left {
+      width: 100%;
+      padding-right: 0;
+      border: none;
+      margin-bottom: 50px;
+    }
+    .right {
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .frame article {
+      width: 100%;
+
+      .inner {
+        padding: 0;
+      }
+    }
+  } 
+}
+
+@media screen and (max-width: $mb) {
+  .Gallery > .inner {
+    .title-wrap p {
+      display: none;
+    }
+    
+    .frame {
+      margin-top: 20px;
+    }
+  } 
 }

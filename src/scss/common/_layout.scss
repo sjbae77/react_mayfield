@@ -22,3 +22,11 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet){
+  .content {
+    >.inner h1 {
+      font-size: $fontXXXL;
+    }
+  }
+}
