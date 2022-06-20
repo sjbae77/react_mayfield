@@ -40,23 +40,22 @@ function Youtube() {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
               cupiditate, aliquam quidem corporis accusantium facere dolorum
             </p>
-
-            <div className="pic">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/JZxOBtrnLxw"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <span>
-                MAIN
-                <br />
-                VIDEO
-              </span>
-            </div>
+          </div>
+          <div className="pic">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/JZxOBtrnLxw"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <span>
+              MAIN
+              <br />
+              VIDEO
+            </span>
           </div>
           <div className="line"></div>
         </div>

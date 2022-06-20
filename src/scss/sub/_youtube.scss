@@ -10,7 +10,7 @@
 
     .mainVids-wrap {
       position: relative;
-      margin: 200px 0 150px;
+      margin: 220px 0 150px;
       display: flex;
       justify-content: flex-end;
 
@@ -38,32 +38,32 @@
           font-size: $fontM;
           color: #777;
         }
+      }
 
-        .pic {
-          position: absolute;
-          top: -100px;
-          left: -98%;
-          width: 130%;
-          height: 340px;
+      .pic {
+        position: absolute;
+        top: -140px;
+        left: 160px;
+        width: 60%;
+        height: 45vh;
 
-          iframe {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-  
-          >span {
-            position: absolute;
-            top: -22px;
-            left: -60px;
-            font-size: $fontXXL;
-            font-weight: 600;
-            line-height: 1.4;
-            letter-spacing: 5px;
-            color: #fff;
-          }
-  
+        iframe {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
+
+        >span {
+          position: absolute;
+          top: -22px;
+          left: -60px;
+          font-size: $fontXXL;
+          font-weight: 600;
+          line-height: 1.4;
+          letter-spacing: 5px;
+          color: #fff;
+        }
+
       }
 
       .line {
@@ -144,6 +144,28 @@
 @media screen and (max-width:$tablet) {
   .Youtube {
     .inner {
+      .mainVids-wrap {
+        margin: 100px 0;
+
+        .cont {
+          display: none;
+        }
+        .pic {
+          position: relative;
+          width: 100%;
+          top: 0;
+          left: 0;
+          margin: 0 auto;
+
+          > span {
+            display: none;
+          }
+        }
+        .line {
+          display: none;
+        }
+      }
+
       .wrap {
         article {
           >span {
