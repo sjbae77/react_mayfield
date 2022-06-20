@@ -82,6 +82,16 @@ function News() {
                 modules={[Navigation]}
                 slidesPerView={3}
                 spaceBetween={30}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  1180: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                  },
+                }}
               >
                 {Posts.map((post, idx) => {
                   return (

@@ -129,3 +129,56 @@
     }
   }
 }
+
+@media screen and(max-width: $tablet) {
+  #news {
+    .visual_inner {
+      width: 100%;
+    }
+
+    .inner {
+      .news-cont {
+        .title-wrap {
+          top: -70px;
+          left: 20px;
+
+          .title h1 {
+            font-size: 3rem;
+          }
+        }
+
+        .shape_paral {
+          margin-left: 20px;
+        }
+      }
+      .send-cont input {
+        width: 50%;
+      }
+    }
+  } 
+}
+
+@media screen and(max-width: $mb) {
+  #news .inner {
+    .news-cont {
+      .title-wrap {
+        top: -57px;
+  
+        .title h1 {
+          font-size: $fontXXL;
+        }
+      } 
+
+      .swiper {
+        .swiper-button-next, .swiper-button-prev {
+          top: 45px;
+        }
+      } 
+    } 
+
+    .send-cont button {
+      margin-left: 0;
+      width: 90px;
+    }
+  } 
+}

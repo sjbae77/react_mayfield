@@ -141,3 +141,36 @@
     color: #000;
   }
 }
+
+@media screen and (max-width: $tablet) {
+  #visual {
+    .visual_inner {
+      width: 100%;
+
+      .mainBox {
+        width: 100%;
+        height: calc(100vh - 100px);
+      }
+    }
+
+    .inner {
+      .title-wrap {
+        left: 20px;
+
+        h1 {
+          font-size: 3rem;
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  } 
+}
+
+@media screen and (max-width: $mb) {
+  #visual .inner .title-wrap h1 {
+    font-size: $fontXXL;
+  }
+}
