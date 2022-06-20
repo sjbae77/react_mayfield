@@ -6,15 +6,48 @@ function Community() {
   const textarea = useRef(null);
   const inputEdit = useRef(null);
   const textareaEdit = useRef(null);
+  let today = new Date();
+  let year = today.getFullYear();
+  let month = today.getMonth() + 1;
+  let day = today.getDate();
+  let formatDay =
+    ("00" + month.toString()).slice(-2) +
+    "." +
+    ("00" + day.toString()).slice(-2);
 
   const getLocalData = () => {
     const data = localStorage.getItem("post");
     const dummyPosts = [
-      { title: "Hello5", content: "Here comes description in detail." },
-      { title: "Hello4", content: "Here comes description in detail." },
-      { title: "Hello3", content: "Here comes description in detail." },
-      { title: "Hello2", content: "Here comes description in detail." },
-      { title: "Hello1", content: "Here comes description in detail." },
+      {
+        title:
+          "Don't dwell on the past. Believe in yourself. Seize the day. Life is a journey",
+        content:
+          "Here comes description in detail. Here comes description in detail. Here comes description in detail.",
+      },
+      {
+        title:
+          "Don't dwell on the past. Believe in yourself. Seize the day. Life is a journey",
+        content:
+          "Here comes description in detail. Here comes description in detail. Here comes description in detail.",
+      },
+      {
+        title:
+          "Don't dwell on the past. Believe in yourself. Seize the day. Life is a journey",
+        content:
+          "Here comes description in detail. Here comes description in detail. Here comes description in detail.",
+      },
+      {
+        title:
+          "Don't dwell on the past. Believe in yourself. Seize the day. Life is a journey",
+        content:
+          "Here comes description in detail. Here comes description in detail. Here comes description in detail.",
+      },
+      {
+        title:
+          "Don't dwell on the past. Believe in yourself. Seize the day. Life is a journey",
+        content:
+          "Here comes description in detail. Here comes description in detail. Here comes description in detail.",
+      },
     ];
 
     if (data) {
@@ -168,8 +201,8 @@ function Community() {
                 //출력
                 <>
                   <div className="date">
-                    <em>2022</em>
-                    <span>06.12</span>
+                    <em>{year}</em>
+                    <span>{formatDay}</span>
                   </div>
                   <div className="txt">
                     <h2>{post.title}</h2>
