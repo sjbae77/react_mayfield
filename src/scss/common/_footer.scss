@@ -18,7 +18,7 @@ footer {
       }
       p {
         font-size: $fontM;
-        color: #777;
+        color: #bbb;
       }
     }
 
@@ -44,11 +44,15 @@ footer {
         gap: 22px;
 
         li a {
-          color: #555;
+          color: #999;
           font-size: $fontL;
-          font-weight: 600;
+          font-weight: 400;
         }
       }
     }
+  }
+
+  &.main {
+    background-color: #444;
   }
 }

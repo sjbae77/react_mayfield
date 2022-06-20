@@ -46,7 +46,12 @@ function App() {
       <Route path="/location" component={Location} />
       <Route path="/join" component={Join} />
 
-      <Footer />
+      <Switch>
+        <Route exact path={"/"}>
+          <Footer type={"main"} />
+        </Route>
+        <Route path="/" render={() => <Footer type={"sub"} />} />
+      </Switch>
     </>
   );
 }

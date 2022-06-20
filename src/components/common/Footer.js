@@ -2,9 +2,9 @@ import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-function Footer() {
+function Footer({ type }) {
   return (
-    <footer>
+    <footer className={type}>
       <div className="inner">
         <div className="left">
           <Link to="/">Mayfield</Link>
@@ -15,7 +15,7 @@ function Footer() {
             <a href="#">buy now</a>
           </span>
 
-          {/* <span className="shape_paral icon">
+          <span className="shape_paral icon">
             <a href="#">
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
@@ -24,7 +24,7 @@ function Footer() {
             <a href="#">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-          </span> */}
+          </span>
 
           <ul className="ft_gnb">
             <li>

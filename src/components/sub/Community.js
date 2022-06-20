@@ -17,44 +17,7 @@ function Community() {
 
   const getLocalData = () => {
     const data = localStorage.getItem("post");
-    const dummyPosts = [
-      {
-        title:
-          "Don't dwell on the past. Believe in yourself. Seize the day. Life is a journey",
-        content:
-          "Here comes description in detail. Here comes description in detail. Here comes description in detail.",
-      },
-      {
-        title:
-          "Don't dwell on the past. Believe in yourself. Seize the day. Life is a journey",
-        content:
-          "Here comes description in detail. Here comes description in detail. Here comes description in detail.",
-      },
-      {
-        title:
-          "Don't dwell on the past. Believe in yourself. Seize the day. Life is a journey",
-        content:
-          "Here comes description in detail. Here comes description in detail. Here comes description in detail.",
-      },
-      {
-        title:
-          "Don't dwell on the past. Believe in yourself. Seize the day. Life is a journey",
-        content:
-          "Here comes description in detail. Here comes description in detail. Here comes description in detail.",
-      },
-      {
-        title:
-          "Don't dwell on the past. Believe in yourself. Seize the day. Life is a journey",
-        content:
-          "Here comes description in detail. Here comes description in detail. Here comes description in detail.",
-      },
-    ];
-
-    if (data) {
-      return JSON.parse(data);
-    } else {
-      return dummyPosts;
-    }
+    return JSON.parse(data);
   };
 
   const [Posts, setPosts] = useState(getLocalData());

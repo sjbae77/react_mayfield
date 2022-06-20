@@ -59,6 +59,7 @@ body {
   width: 130px;
   height: 40px;
   background-color: inherit;
+  cursor: pointer;
 
   a, span {
     display: block;
@@ -82,10 +83,14 @@ body {
     background-color: #555;
     width: 100%;
     height: 100%;
-    transition: 0.5;
+    transition: 0.5s;
   }
 
   &.icon {
     width: 50px;
+  }
+
+  &:hover::before {
+    background-color: lighten($color: #555, $amount: 10);
   }
 }
