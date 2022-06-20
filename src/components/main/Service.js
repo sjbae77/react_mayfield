@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Service() {
   const path = process.env.PUBLIC_URL;
 
@@ -12,7 +14,7 @@ function Service() {
             do for you?
           </h1>
           <span className="shape_paral">
-            <a href="#">aur all services</a>
+            <Link to="/about">our all services</Link>
           </span>
         </div>
         <div className="box-wrap">

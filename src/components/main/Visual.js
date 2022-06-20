@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "swiper/css";
 
 function Visual() {
@@ -56,7 +57,7 @@ function Visual() {
               real life.
             </h1>
             <span className="shape_paral">
-              <a href="#">read more about us</a>
+              <Link to="/about">read more about us</Link>
             </span>
           </div>
 

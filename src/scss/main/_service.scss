@@ -55,6 +55,8 @@
         width: 100%;
         height: 100%;
         background-color: rgba($color: #000000, $alpha: 0.5);
+        transition: 0.5s;
+        cursor: pointer;
       }
 
       img {
@@ -70,6 +72,7 @@
         height: 80%;
         background-color: #222;
         padding: 25px;
+        transition: 0.5s;
 
         em {
           display: block;
@@ -94,11 +97,23 @@
           top: 50%;
           right: 0;
         }
+
+        &:hover {
+          .textBox {
+            top: 80%;
+          }
+        }
       }
       &.box2 {
         .textBox {
           top: -70px;
           left: 0;
+        }
+
+        &:hover {
+          .textBox {
+            left: -30%;
+          }
         }
       }
       &.box3 {
@@ -106,6 +121,16 @@
           top: 0;
           right: 0;
         }
+
+        &:hover {
+          .textBox {
+            right: -30%;
+          }
+        }
+      }
+
+      &:hover::after {
+        background-color: rgba($color: #000000, $alpha: 0);
       }
     }
   }
