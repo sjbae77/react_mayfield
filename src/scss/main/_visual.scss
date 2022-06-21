@@ -97,6 +97,9 @@
       background-color: #222;
       width: 300px;
       height: 300px;
+      opacity: 0;
+      transform: translateY(100px);
+      transition: 0.5s;
 
       em {
         display: block;
@@ -140,6 +143,15 @@
     font-size: $fontL;
     font-weight: 600;
     color: #000;
+  }
+
+  &.on {
+    .visual_inner .inner {
+      .textBox {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    } 
   }
 }
 

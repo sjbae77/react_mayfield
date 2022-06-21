@@ -24,6 +24,9 @@
         align-items: flex-end;
         justify-content: space-between;
         width: 100%;
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: 0.5s;
   
         .title {
           em {
@@ -126,6 +129,13 @@
       button {
         margin-left: 50px;
       }
+    }
+  }
+
+  &.on {
+    .visual_inner .inner .news-cont .title-wrap {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 }
