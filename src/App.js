@@ -4,9 +4,7 @@ import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 
 //main
-import Visual from "./components/main/Visual";
-import Service from "./components/main/Service";
-import News from "./components/main/News";
+import Main from "./components/main/Main";
 
 //sub
 import About from "./components/sub/About";
@@ -30,12 +28,8 @@ function App() {
   return (
     <>
       <Switch>
-        <Route exact path="/">
-          <Header type={"main"} />
-          <Visual />
-          <Service />
-          <News />
-        </Route>
+        <Route exact path="/" component={Main}></Route>
+
         <Route path="/" render={() => <Header type={"sub"} />} />
       </Switch>
 

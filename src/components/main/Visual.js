@@ -28,7 +28,7 @@ function Visual() {
   }, []);
 
   return (
-    <section id="visual">
+    <section id="visual" className="myScroll">
       <div className="visual_inner">
         <div className="mainBox">
           <Swiper

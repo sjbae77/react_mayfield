@@ -4,7 +4,7 @@ function Service() {
   const path = process.env.PUBLIC_URL;
 
   return (
-    <section id="service">
+    <section id="service" className="myScroll">
       <div className="inner">
         <div className="title-wrap">
           <em>OUR SERVICES</em>

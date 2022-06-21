@@ -1,0 +1,23 @@
+.scroll_navi {
+  z-index: 4;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 50px;
+
+  li {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 10px;
+    padding-left: 5px;
+    transition: 0.5s;
+    color: #bbb;
+    cursor: pointer;
+
+    &.on {
+      height: 80px;
+      color: #fff;
+    }
+  }
+}

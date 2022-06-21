@@ -66,7 +66,7 @@ function News() {
   }, []);
 
   return (
-    <section id="news">
+    <section id="news" className="myScroll">
       <div className="visual_inner">
         <div className="inner">
           <div className="news-cont">
