@@ -1,4 +1,8 @@
 .Community {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+
   .inputBox {
     width: 100%;
     text-align: center;
@@ -114,6 +118,11 @@
         }
       }
     }
+  }
+
+  &.on {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

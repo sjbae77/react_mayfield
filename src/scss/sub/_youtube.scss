@@ -1,4 +1,8 @@
 .Youtube {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+
   .inner {
     > p {
       margin-top: 20px;
@@ -139,6 +143,10 @@
     }
   }
   
+  &.on {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (max-width:$tablet) {

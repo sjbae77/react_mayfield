@@ -1,4 +1,8 @@
 .Join {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+
   .inner {
     >p {
       margin-top: 20px;
@@ -122,6 +126,11 @@
         font-size: $fontM;
       }
     }
+  }
+
+  &.on {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

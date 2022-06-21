@@ -1,4 +1,8 @@
 .Gallery {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+
   >.inner {
     display: flex;
     flex-wrap: wrap;
@@ -165,6 +169,10 @@
     }
   }
   
+  &.on {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (max-width: $tablet) {
