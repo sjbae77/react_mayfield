@@ -4,19 +4,28 @@
   top: 50%;
   transform: translateY(-50%);
   right: 50px;
+  background-color: rgba($color: darkgreen, $alpha: 0.6);
 
   li {
     display: flex;
     align-items: center;
-    height: 30px;
+    justify-content: center;
+    height: 40px;
     margin: 10px;
-    padding-left: 5px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(28, 114, 28);
     transition: 0.5s;
     color: #bbb;
+    text-align: center;
+    font-size: 14px;
     cursor: pointer;
 
+    &:last-child {
+      border: none;
+    }
+
     &.on {
-      height: 80px;
+      height: 100px;
       color: #fff;
     }
   }

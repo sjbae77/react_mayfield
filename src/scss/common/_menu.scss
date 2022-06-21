@@ -1,0 +1,42 @@
+#gnbMb {
+  z-index: 5;
+  padding: 50px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+
+  h1 {
+    a {
+      font-size: $fontXL;
+      color: #fff;
+    }
+  }
+
+  ul {
+    margin-top: 100px;
+    text-align: center;
+
+    li {
+      margin-bottom: 20px;
+
+      a {
+        display: block;
+        font-family: "Dosis";
+        font-size: 5vw;
+        color: #bbb;
+        letter-spacing: 10px;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

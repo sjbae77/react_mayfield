@@ -41,7 +41,7 @@ header {
       right: 20px;
       transform: translateY(-50%);
       font-size: $fontXL;
-      color: #555;
+      color: #fff;
       display: none;
     }
   }
@@ -58,6 +58,10 @@ header {
 
     #gnb {
       display: none;
+    }
+
+    .fa-bars {
+      display: block;
     }
   } 
 }
