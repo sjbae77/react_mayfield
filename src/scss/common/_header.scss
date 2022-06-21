@@ -1,6 +1,10 @@
 header {
+  z-index: 2;
   width: 100%;
   background-color: #111;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   .inner {
     position: relative;

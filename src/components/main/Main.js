@@ -43,8 +43,6 @@ function Main() {
   useEffect(() => {
     getPos();
 
-    pos.current[0] = 0;
-
     window.addEventListener("resize", getPos);
     window.addEventListener("scroll", activation);
 
