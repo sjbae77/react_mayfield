@@ -10,6 +10,7 @@ function Gallery() {
   const frame = useRef(null);
   const frame2 = useRef(null);
   const pop = useRef(null);
+  const pop2 = useRef(null);
   const [Items, setItems] = useState([]);
   const [Items2, setItems2] = useState([]);
   const [Loading, setLoading] = useState(true);
@@ -186,7 +187,7 @@ function Gallery() {
                       <FontAwesomeIcon
                         icon={faMagnifyingGlassPlus}
                         onClick={() => {
-                          pop.current.open();
+                          pop2.current.open();
                           setIndex(idx);
                         }}
                       />
@@ -234,6 +235,15 @@ function Gallery() {
           <img
             src={`https://live.staticflickr.com/${Items[Index].server}/${Items[Index].id}_${Items[Index].secret}_b.jpg`}
             alt={Items[Index].title}
+          />
+        )}
+      </Popup>
+
+      <Popup ref={pop2}>
+        {Items2.length !== 0 && (
+          <img
+            src={`https://live.staticflickr.com/${Items2[Index].server}/${Items2[Index].id}_${Items2[Index].secret}_b.jpg`}
+            alt={Items2[Index].title}
           />
         )}
       </Popup>
