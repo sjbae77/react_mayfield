@@ -1,17 +1,10 @@
-import React from "react";
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 
 function About() {
   const path = process.env.PUBLIC_URL;
-  const [Rooms, setRooms] = useState([]);
+  const Rooms = useSelector((store) => store.room.data);
 
-  useEffect(() => {
-    axios.get(`${path}/DB/rooms.json`).then((json) => {
-      // console.log(json.data.rooms);
-      setRooms(json.data.rooms);
-    });
-  }, []);
+  console.log(Rooms);
 
   return (
     <section className="content About">

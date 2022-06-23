@@ -5,7 +5,8 @@ export const fetchYoutube = createAsyncThunk(
   "youtube/requestYoutube",
   async () => {
     const key = "AIzaSyCNEFP7grGD77zUQvYF6Tg93dOjeA-mCjs";
-    const playList = "PLKoTiVSIVIvnzOXEzNgPazzOR21NERHWz";
+    // const playList = "PLKoTiVSIVIvnzOXEzNgPazzOR21NERHWz";
+    const playList = "PLKoTiVSIVIvm0Dn5bSCc23Iy_V6EdZ3k2";
     const num = 4;
     const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playList}&maxResults=${num}`;
 

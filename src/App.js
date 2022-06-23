@@ -17,12 +17,15 @@ import Join from "./components/sub/Join";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { fetchYoutube } from "./redux/youtubeSlice";
+import { fetchRoom } from "./redux/roomSlice";
 
 function App() {
   const dispatch = useDispatch();
 
+  //루트 컴포넌트가 마운트되자마자 slice로 부터 가져온 fetYoutube함수를 호출해서 리턴값을 받고 바로 sliceReducer로 전달
   useEffect(() => {
     dispatch(fetchYoutube());
+    dispatch(fetchRoom());
   }, []);
 
   return (
