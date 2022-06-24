@@ -4,8 +4,6 @@ function About() {
   const path = process.env.PUBLIC_URL;
   const Rooms = useSelector((store) => store.room.data);
 
-  console.log(Rooms);
-
   return (
     <section className="content About">
       <article className="banner">
