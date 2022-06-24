@@ -25,7 +25,7 @@
       a {
         display: block;
         font-family: "Dosis";
-        font-size: 5vw;
+        font-size: 8vw;
         color: #bbb;
         letter-spacing: 10px;
 
@@ -39,4 +39,11 @@
       }
     }
   }
+}
+
+@media screen and (max-width:$mb) {
+  #gnbMb ul {
+    margin-top: 60px;
+  }
+  
 }

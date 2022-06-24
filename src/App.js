@@ -32,7 +32,6 @@ function App() {
     <>
       <Switch>
         <Route exact path="/" component={Main}></Route>
-
         <Route path="/" render={() => <Header type={"sub"} />} />
       </Switch>
 
