@@ -48,8 +48,8 @@ function Main() {
     window.addEventListener("scroll", activation);
 
     return () => {
-      window.addEventListener("resize", getPos);
-      window.addEventListener("scroll", activation);
+      window.removeEventListener("resize", getPos);
+      window.removeEventListener("scroll", activation);
     };
   }, []);
 
