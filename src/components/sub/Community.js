@@ -11,13 +11,6 @@ function Community() {
     "." +
     ("00" + day.toString()).slice(-2);
 
-  const [PostDate, setPostDate] = useState([
-    "06.16",
-    "06.16",
-    "06.16",
-    "06.16",
-    "06.16",
-  ]);
   const input = useRef(null);
   const textarea = useRef(null);
   const inputEdit = useRef(null);
@@ -51,10 +44,6 @@ function Community() {
       { title: input.current.value, content: textarea.current.value },
       ...Posts,
     ]);
-
-    let copyDate = [...PostDate];
-    copyDate.unshift(formatDay);
-    setPostDate(copyDate);
 
     resetPost();
   };
@@ -177,7 +166,7 @@ function Community() {
                 <>
                   <div className="date">
                     <em>{year}</em>
-                    <span>{PostDate[idx]}</span>
+                    <span>{formatDay}</span>
                   </div>
                   <div className="txt">
                     <h2>{post.title}</h2>
