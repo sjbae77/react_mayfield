@@ -30,7 +30,7 @@ function Location() {
   const imageSize = Info[Index].imgSize;
   const imageOption = Info[Index].imgPos;
 
-  var markerImage = new kakao.maps.MarkerImage(
+  const markerImage = new kakao.maps.MarkerImage(
     imageSrc,
     imageSize,
     imageOption

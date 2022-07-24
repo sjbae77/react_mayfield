@@ -2,10 +2,6 @@ import Layout from "../common/Layout";
 import { useRef, useState, useEffect } from "react";
 
 function Community() {
-  const input = useRef(null);
-  const textarea = useRef(null);
-  const inputEdit = useRef(null);
-  const textareaEdit = useRef(null);
   let today = new Date();
   let year = today.getFullYear();
   let month = today.getMonth() + 1;
@@ -14,6 +10,18 @@ function Community() {
     ("00" + month.toString()).slice(-2) +
     "." +
     ("00" + day.toString()).slice(-2);
+
+  const [PostDate, setPostDate] = useState([
+    "06.16",
+    "06.16",
+    "06.16",
+    "06.16",
+    "06.16",
+  ]);
+  const input = useRef(null);
+  const textarea = useRef(null);
+  const inputEdit = useRef(null);
+  const textareaEdit = useRef(null);
 
   const getLocalData = () => {
     const data = localStorage.getItem("post");
@@ -43,6 +51,10 @@ function Community() {
       { title: input.current.value, content: textarea.current.value },
       ...Posts,
     ]);
+
+    let copyDate = [...PostDate];
+    copyDate.unshift(formatDay);
+    setPostDate(copyDate);
 
     resetPost();
   };
@@ -165,7 +177,7 @@ function Community() {
                 <>
                   <div className="date">
                     <em>{year}</em>
-                    <span>{formatDay}</span>
+                    <span>{PostDate[idx]}</span>
                   </div>
                   <div className="txt">
                     <h2>{post.title}</h2>
